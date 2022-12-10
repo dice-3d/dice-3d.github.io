@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dice 3D</title>
+  <style>
+    html,
+    body,
+    canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    label {
+      color: white;
+      font-size: large;
+      font-weight: bold;
+      background-color: grey;
+      opacity: 50%;
+    }
+
+    button {
+      color: white;
+      font-size: larger;
+      font-weight: bold;
+      background-color: green;
+      border: none;
+      width: 20%;
+      opacity: 50%;
+    }
+
+    .top {
+      width: 97%;
+      position: absolute;
+      left: 3%;
+      top: 2%;
+    }
+
+    .bottom {
+      width: 97%;
+      position: absolute;
+      left: 3%;
+      bottom: 2%;
+      height: 20%;
+    }
+
+    div{
+      margin-top: 1%;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index.11c82e2d.js"></script>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  
+  <script src="https://cdn.babylonjs.com/ammo.js"></script>
+  <div class="top">
+    <label>点击屏幕掷骰子</label>
+  </div>
+  <div class="bottom">
+    <label id="info">点击下方按钮添加骰子（最多9个）</label>
+    <div>
+      <button id="d4">4面骰</button>
+      <button id="d6">6面骰</button>
+      <button id="d8">8面骰</button>
+      <button id="clear">清空</button>
+    </div>
+    <div>
+      <button id="d10">10面骰</button>
+      <button id="d12">12面骰</button>
+      <button id="d20">20面骰</button>
+    </div>
+  </div>
+</body>
+
+</html>
